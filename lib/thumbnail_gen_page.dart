@@ -34,7 +34,7 @@ class ThumbnailGenPage extends StatelessWidget {
       }
     }
     return Thumbnail(
-      mimeType: 'application/pdf',
+      mimeType: mimeType,
       widgetSize: maxWidth.toDouble(),
       dataResolver: () => source.readAsBytes(),
     );
